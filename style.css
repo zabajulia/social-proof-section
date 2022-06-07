@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    
+    font-family: 'League Spartan', sans-serif;
+    background-image: url('./images/bg-pattern-top-desktop.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: max(50%, 400px);
+  
+    
+    
+}
+
+
+
+header { 
+    
+    margin: 100px auto; 
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .span {
+    max-width: 30%;
+}
+
+header h1 {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+header p {
+    font-size: 20px;
+    color: hsl(300, 43%, 22%);
+    opacity: 0.8;
+}
+
+.box {
+    background-color: hsl(300, 24%, 96%);
+    margin-top: 20px;
+    padding: 15px 30px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+
+.box span {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    margin-left: 20px;
+}
+
+.box-one {
+    transform: translateX(-20%);
+}
+
+.box-two {
+    transform: translateX(-10%);
+}
+
+
+
+.container {
+    margin: 100px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.background-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 50%;
+}
+
+.box-container {
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 17px;
+    line-height: 24px;
+    max-width: 390px;
+
+}
+
+.box-container img {
+    border-radius: 50%;
+    max-width: 40px;
+    margin-right: 20px;
+}
+
+.box-container h5 {
+    margin: 0;
+}
+
+.box-container p {
+  margin-top: 20px;
+}
+
+.box-container span {
+    color: hsl(333, 80%, 67%);
+    font-weight: 500;
+    opacity: 0.8;
+    
+}
+
+.irene {
+    transform: translateY(10%);
+}
+
+.anne {
+    transform: translateY(20%);
+}
+
+@media (max-width: 900px) { 
+    body {
+        text-align: center;
+        background-image: url('./images/bg-pattern-top-mobile.svg'), url('./images/bg-pattern-bottom-mobile.svg');
+        background-position: left top, right bottom;
+        background-repeat: no-repeat;
+        background-size: max(50%, 400px);
+    }
+
+    header { 
+        display: block;
+        margin: 30px 20px;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    header .span {
+        max-width: 100%;
+    }
+
+    .box {
+        height: 70px;
+        margin: 20px auto;
+        max-width: 350px;
+    }
+
+    .box span {
+        margin-top: 7px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-one {
+        transform: translateX(0);
+    }
+    
+    .box-two {
+        transform: translateX(0);
+    }
+    
+    .container {
+        margin-top: 20px;
+        display: block;
+        max-width: 100%;
+    }
+
+    .box-container {
+        margin: 20px auto;
+        line-height: 17px;
+        max-width: 350px;
+    }
+
+    .box-container p {
+        text-align: left;
+        line-height: 24px;
+    }
+
+   
+
+    .irene {
+        transform: translateY(0);
+    }
+    
+    .anne {
+        transform: translateY(0);
+    }
+
+}
+
+
+
+@media (max-width: 1200px) { 
+    header {
+        max-width: 800px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    .container {
+        max-width: 800px;
+    }
+
+    .box span {
+        margin-left: 10px;
+    }
+
+    .box-container {
+        max-width: 260px;
+        
+    }
+
+    .box-container p {
+        font-size: 15px;
+    }
+}
